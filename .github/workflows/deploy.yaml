@@ -76,7 +76,7 @@ jobs:
         sleep 2
 
         # Check health endpoint
-        if curl -f http://localhost/health; then
+        if curl -f http://localhost:8080/health; then
           echo "✅ Health check passed"
         else
           echo "❌ Health check failed"
