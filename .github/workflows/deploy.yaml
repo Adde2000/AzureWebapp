@@ -84,7 +84,7 @@ jobs:
         fi
 
         # Verify index page
-        if curl -f http://localhost:8080 | grep -q "Azure Web Application"; then
+        if curl -f http://localhost:8080 | grep -q "Welcome to Adams Contact Application"; then
           echo "✅ Content verification passed"
         else
           echo "❌ Content verification failed"
